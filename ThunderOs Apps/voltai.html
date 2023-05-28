@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Redirection aléatoire</title>
+  <script>
+    function getRandomLinks() {
+      const links = [
+        "https://voltgpt.shadowycommunity.repl.co",
+        "https://voltgpt-s2.shadowycommunity.repl.co",
+        "https://voltgpt-s3.shadowycommunity.repl.co",
+        "https://voltgpt-s4.shadowycommunity.repl.co",
+        "https://voltgpt-s5.shadowycommunity.repl.co",
+        "https://voltgpt-s6.shadowycommunity.repl.co",
+        "https://voltgpt-s7.shadowycommunity.repl.co",
+        "https://voltgpt-s8.shadowycommunity.repl.co",
+        "https://voltgpt-s9.shadowycommunity.repl.co",
+        "https://voltgpt-s10.shadowycommunity.repl.co",
+        "https://voltgpt-s11.shadowycommunity.repl.co",
+        "https://voltgpt-s12.shadowycommunity.repl.co",
+        "https://voltgpt-s14.shadowycommunity.repl.co",
+        "https://voltgpt-s15.shadowycommunity.repl.co",
+        "https://voltgpt-s16.shadowycommunity.repl.co",
+        "https://voltgpt-s17.shadowycommunity.repl.co",
+        "https://voltgpt-s18.shadowycommunity.repl.co",
+        "https://voltgpt-s19.shadowycommunity.repl.co",
+        "https://voltgpt-s20.shadowycommunity.repl.co",
+        "https://voltgpt-s21.shadowycommunity.repl.co",
+        "https://voltgpt-s22.shadowycommunity.repl.co",
+        "https://voltgpt-s23.shadowycommunity.repl.co",
+        "https://voltgpt-s24.shadowycommunity.repl.co",
+        "https://voltgpt-s25.shadowycommunity.repl.co",
+        "https://voltgpt-s26.shadowycommunity.repl.co",
+        "https://voltgpt-s27.shadowycommunity.repl.co",
+        "https://voltgpt-s28.shadowycommunity.repl.co",
+        "https://voltgpt-s29.shadowycommunity.repl.co",
+        "https://voltgpt-s30.shadowycommunity.repl.co",
+        // Ajoutez d'autres liens ici
+      ];
+      const randomLinks = [];
+      for (let i = 0; i < 25; i++) {
+        const randomIndex = Math.floor(Math.random() * links.length);
+        randomLinks.push(links[randomIndex]);
+      }
+      return randomLinks;
+    }
+
+    function redirectToRandomLinks() {
+      const randomLinks = getRandomLinks();
+      randomLinks.forEach(link => {
+        window.location.href = link;
+      });
+    }
+  </script>
+</head>
+<body onload="redirectToRandomLinks()">
+  <h1>Bonjour je suis VoltAI</h1>
+</body>
+</html>

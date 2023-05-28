@@ -1,3 +1,3 @@
-# iMac Web
+### ThunderOs powered by iMac Web
 ### Not completed Yet
-### [Open iMac](https://codeAbinash.github.io/iMac-Web/)
+### [Open ThunderOs](linkr.it/tos)

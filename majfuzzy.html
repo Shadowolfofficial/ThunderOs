@@ -24,17 +24,16 @@
   </div>
   <script>
     const iframeWrapper = document.getElementById('iframe-wrapper');
-    document.addEventListener('keydown', (e) => {
-      if (e.keyCode === 16) { // 16 is the keycode for the maj key
-        iframeWrapper.classList.add('unblur');
+    iframeWrapper.addEventListener('keydown', (e) => {
+      if (e.shiftKey) {
+        iframeWrapper.blur();
       }
     });
-    document.addEventListener('keyup', (e) => {
-      if (e.keyCode === 16) { // 16 is the keycode for the maj key
-        iframeWrapper.classList.remove('unblur');
+    iframeWrapper.addEventListener('keyup', (e) => {
+      if (!e.shiftKey) {
+        iframeWrapper.focus();
       }
     });
-
   </script>
 </body>
 </html>

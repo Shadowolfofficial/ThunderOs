@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  setInterval(setTime, 1000);
+  setTimeout(setTime, 1000);
 });
 
 function setTime() {
@@ -9,8 +9,8 @@ function setTime() {
   const hour = now.getHours();
   const time = `${checkZero(hour)}:${checkZero(now.getMinutes())}`;
   const date = `${dayList[now.getDay()]}, ${monthList[now.getMonth()]} ${now.getDate()}`;
-  $(".bottom .container .calender p").text(dayList[now.getDay()]);
-  $(".bottom .container .calender h1").text(now.getDate());
+  $(".bottom .container .calendar p").text(dayList[now.getDay()]);
+  $(".bottom .container .calendar h1").text(now.getDate());
   $(".main .left .time h1").text(time);
   $(".main .left .time p").text(date);
 }

@@ -13,14 +13,14 @@ body .bottom{
     backdrop-filter: blur(15px);
     background: #ffffff22;
     padding: 15px 15px;
-    border-radius: 30px;
+    border-radius: 50px;
     margin-bottom: 20px;
 }
 .bottom .container .icon{
     background: transparent;
     height: 60px;
     width: 60px;
-    border-radius: 14px;
+    border-radius: 15px;
     margin: 0 5px;
     transition: 0.1s linear transform,0.05s linear opacity;
     background-repeat: no-repeat;

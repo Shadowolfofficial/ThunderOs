@@ -16,5 +16,9 @@ function setTime() {
 }
 
 function checkZero(i) {
-  return i < 10 ? `0${i}` : i;
+  if (i < 10 && i >= 0) {
+    return `0${i}`;
+  } else {
+    return i;
+  }
 }
